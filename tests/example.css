@@ -1,0 +1,130 @@
+body{
+	font-family: arial; 
+	font-size: 16px;
+}
+.body-wrap{
+	width:960px;
+	margin:auto;
+	padding-bottom: 200px;
+}
+
+.label{
+	font-size:16px;
+	font-weight:bold;
+	display:block;
+}
+
+.radio-check label{
+	display: block;
+	font-size:14px
+}
+
+.button{
+	padding:10px;
+	background:#000;
+	color:#FFF;
+	display: inline-block;
+	border:1px solid #000;
+	font-size: 16px;
+	text-decoration: none;
+	vertical-align: top;
+	cursor: pointer;
+}
+
+.button:hover, .button:focus{
+	color:#000;
+	background:#FFF;
+}
+
+.access,
+.says,
+.screen-reader-text {
+	position: absolute !important;
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+	width: 1px;
+	height: 1px; /* many screen reader and browser combinations announce broken words as they would appear visually */
+	word-wrap: normal !important;
+}
+
+.row{
+	margin-bottom: 20px;
+}
+
+.section{margin-bottom: 50px;}
+
+.link2 a{
+	outline:none;
+}
+.link2 a:hover{text-decoration: none;}
+
+.link3 a{
+	outline:none;
+	color:#333;
+	padding:10px;
+	display: inline-block;
+}
+
+.link3 a:hover, .link3 a:focus{
+	background:#333;
+	color:#FFF;
+	text-decoration: none;
+}
+
+h1, .h1{
+	display: block;
+	font-size:48px;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+h2, .h2{
+	display: block;
+	font-size:36px;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+h3, .h3{
+	display: block;
+	font-size:30px;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+h4, .h4{
+	display: block;
+	font-size:24px;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+h5, .h5{
+	display: block;
+	font-size:21px;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+h6, .h6{
+	display: block;
+	font-size:18px;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+.color{
+	margin-bottom: 50px;
+	padding: 20px;
+}
+
+.color1{background: #165068}
+.color1 p{color:#60afc9;}
+
+.color2{background:#697D24;}
+.color2 p{color:#b9cb6d;}
+
+
+
+
+

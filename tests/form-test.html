@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Form Test</title>
+	<link rel="stylesheet" href="example.css">
+</head>
+<body>
+	<div class="body-wrap">
+		<h1>Form Testing</h1>
+		<form action="#">
+			<div class="row">
+				<label class="label" for="first_name" required aria-required="true">First Name</label>
+				<input type="text" id="first_name" aria-describedby="first_name_error">
+				<label for="first_name" id="first_name_error">This is an additional label associated with the first name</label>
+			</div>
+
+			<div class="row">
+				<span class="label">Last Name</span>
+				<input type="text" id="last_name">
+			</div>
+
+			<div class="row">
+				<label>
+					<span class="label">Email Address</span>
+					<input type="text" id="email">
+				</label>
+			</div>
+
+			<div class="row">
+				<label class="access" for="pet">What is your Pets Name?</label>
+				<input type="text" id="pet" placeholder="Pets Name">
+			</div>
+
+			<div class="row radio-check">
+				<fieldset>
+					<legend>Radio Buttons Legend Title</legend>
+					<label><input type="radio" value="safsadfsad" name="group">Option 1</label>
+					<label><input type="radio" value="adsfds" name="group">Option 2</label>
+					<label><input type="radio" value="safsaadfsad" name="group">Option 3</label>
+					<label><input type="radio" value="dasf" name="group">Option 4</label>
+					<label><input type="radio" value="af" name="group">Option 5</label>
+					<label><input type="radio" value="afasdf" name="group">Option 6</label>
+				</fieldset>
+			</div>
+
+			<div class="row radio-check">
+				<fieldset>
+					<legend>Checkbox Buttons Legend Title</legend>
+					<label><input type="checkbox" value="safsadfsad" name="group">Option 1</label>
+					<label><input type="checkbox" value="adsfds" name="group">Option 2</label>
+					<label><input type="checkbox" value="safsaadfsad" name="group">Option 3</label>
+					<label><input type="checkbox" value="dasf" name="group">Option 4</label>
+					<label><input type="checkbox" value="af" name="group">Option 5</label>
+					<label><input type="checkbox" value="afasdf" name="group">Option 6</label>
+				</fieldset>
+			</div>
+
+			<div class="row">
+				<label for="selects">Select Dropdown Test</label>
+				<select id="selects">
+				  <optgroup label="Group 1">
+				    <option>Option 1.1</option>
+				  </optgroup> 
+				  <optgroup label="Group 2">
+				    <option>Option 2.1</option>
+				    <option>Option 2.2</option>
+				  </optgroup>
+				  <optgroup label="Group 3" disabled>
+				    <option>Option 3.1</option>
+				    <option>Option 3.2</option>
+				    <option>Option 3.3</option>
+				  </optgroup>
+				</select>
+			</div>
+
+			<div class="row">
+				<a href="#" class="button">Submit</a>
+				<a class="button">Submit</a>
+				<a href="http://www.lmo.com" class="button">Submit</a>
+				<button class="button" type="button">Submit</button>
+				<button type="submit" class="button">Submit</button>
+				<span class="button">Submit</span>
+				<input type="submit" value="Submit" class="button">
+			</div>
+		</form>
+	</div>
+	<script src="tota11y.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Shower Presentation Engine</title>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="shower/themes/ribbon/styles/screen-16x10.css">
+</head>
+<body class="shower list">
+	<header class="caption">
+		<h1>Accessibility &amp; Testing</h1>
+	</header>
+	<section class="slide">
+		<h2 class="shout shrink">Accessibility &amp; Testing</h2>
+	</section>
+	<section class="slide">
+		<h2>Acronyms to Know</h2>
+		<ul>
+			<li><strong>A11y</strong> - Accessibility</li>
+			<li><strong>WCAG</strong> - Web Content Accessibility Guidelines</li>
+			<li><strong>WAI</strong> - Web Accessibility Initiative</li>
+			<li><strong>ARIA</strong> - Accessible Rich Internet Applications</li>
+		</ul>
+	</section>
+	<section class="slide">
+		<h2>What is Accessibility?</h2>
+		<figure>
+			<blockquote>
+				<p>Accessibility refers to the design of products, devices, services, or environments for people who experience disabilities.[1] The concept of accessible design and practice of accessible development ensures both "direct access" (i.e. unassisted) and "indirect access" meaning compatibility with a person's assistive technology (for example, computer screen readers).</p>
+			</blockquote>
+			<figcaption>- <a href="https://en.wikipedia.org/wiki/Accessibility" target="_blank">Wikipedia</a> </figcaption>
+		</figure>
+	</section>
+
+	<section class="slide">
+		<h2>What is a Disability?</h2>
+		<figure>
+			<blockquote>
+				<p>Disabilities is an umbrella term, covering impairments, activity limitations, and participation restrictions. An impairment is a problem in body function or structure; an activity limitation is a difficulty encountered by an individual in executing a task or action; while a participation restriction is a problem experienced by an individual in involvement in life situations. Thus, disability is a complex phenomenon, reflecting an interaction between features of a person’s body and features of the society in which he or she lives.</p>
+			</blockquote>
+			<figcaption>- World Health Organization, Disabilities</figcaption>
+		</figure>
+	</section>
+	
+	<section class="slide">
+		<h2>A Better Definition of Disability?</h2>
+		<figure>
+			<blockquote>
+				<p>Also think broadening the definition of accessibility will help. Accessibility is not just about blind people, it’s also about folks who’ve broken their dominant arm or happen to be holding a baby and are mousing with less accuracy, or folks who are in a noisy area and forgot their headphones and could benefit from captions. Accessibility is about creating opportunities for people to consume your content or service in the way or ways they need, based on their unique needs</p>
+			</blockquote>
+			<figcaption>- Aaron Gustafson (Author of Adaptive Web Design)</figcaption>
+		</figure>
+	</section>
+
+	<section class="slide">
+		<h2>Why Accessibility Matters?</h2>
+		<figure>
+			<blockquote>
+				<p>According to the United States Census Bureau approximately 56.7 million Americans, 18.7% of the non-institutionalized population lives with some form of disability with 12.6% having a severe disability.</p>
+			</blockquote>
+			<figcaption><a href="http://www.census.gov/prod/2012pubs/p70-131.pdf">Census.gov - 2010 Census</a></figcaption>
+		</figure>
+	</section>
+	<section class="slide">
+		<h2>Why Accessibility Matters?</h2>
+		<ul>
+			<li>It is about inclusion</li>
+			<li>More people have disabilities than total users of IE6 - IE11 (7.47%)</li>
+			<li>Inaccessible websites can lead to lose of revenue</li>
+			<li>Inaccessible websites can lead to lawsuits</li>
+			<li>For Government clients it is the law</li>
+		</ul>
+	</section>
+	<section class="slide">
+		<h2>Section 508</h2>
+		<p>Web compliance needs to meet Section 508 of the Rehabilitation Act of 1973, as amended in 1998, most notably <a href="http://www.section508.gov/content/learn/standards/quick-reference-guide#1194.22" target="_blank">Subpart B 1194.22 Web-based intranet and Internet information and applications</a></p>
+
+		<p>Section 508 has 16 guidelines with no levels of compliance, either you are compliant or you are not.</p>
+	</section>
+	
+	<section class="slide">
+		<h2>Section 508</h2>
+		<ul>
+			<li>1194.22 (a) A text equivalent for every non-text element shall be provided (e.g., via "alt", "longdesc", or in element content).</li>
+			<li>1194.22 (b) Equivalent alternatives for any multimedia presentation shall be synchronized with the presentation.</li>
+			<li>1194.22 (c) Web pages shall be designed so that all information conveyed with color is also available without color, for example from context or markup.</li>
+			<li>1194.22 (d) Documents shall be organized so they are readable without requiring an associated style sheet.</li>
+		</ul>
+	</section>
+	<section class="slide">
+		<h2>Section 508</h2>
+		<ul>
+			<li><mark>1194.22 (e) Redundant text links shall be provided for each active region of a server-side image map.</mark></li>
+			<li><mark>1194.22 (f) Client-side image maps shall be provided instead of server-side image maps except where the regions cannot be defined with an available geometric shape.</mark></li>
+			<li>1194.22 (g) Row and column headers shall be identified for data tables.</li>
+			<li >1194.22 (h) Markup shall be used to associate data cells and header cells for data tables that have two or more logical levels of row or column headers.</li>
+			<li><mark>1194.22 (i) Frames shall be titled with text that facilitates frame identification and navigation.</mark></li>
+		</ul>
+	</section>
+	<section class="slide">
+		<h2>Section 508</h2>
+		<ul>
+			<li>1194.22 (j) Pages shall be designed to avoid causing the screen to flicker with a frequency greater than 2 Hz and lower than 55 Hz.</li>
+			<li><mark>1194.22 (k) A text-only page, with equivalent information or functionality, shall be provided to make a web site comply with the provisions of this part, when compliance cannot be accomplished in any other way. The content of the text-only page shall be updated whenever the primary page changes.</mark></li>
+			<li>1194.22 (l) When pages utilize scripting languages to display content, or to create interface elements, the information provided by the script shall be identified with functional text that can be read by assistive technology.</li>
+			
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>Section 508</h2>
+		<ul>
+			<li>1194.22 (m) When a web page requires that an applet, plug-in or other application be present on the client system to interpret page content, the page must provide a link to a plug-in or applet that complies with ??1194.21(a) through (l).</li>
+			<li>1194.22 (n) When electronic forms are designed to be completed on-line, the form shall allow people using assistive technology to access the information, field elements, and functionality required for completion and submission of the form, including all directions and cues.</li>
+			<li>1194.22 (o) A method shall be provided that permits users to skip repetitive navigation links.</li>
+			<li>1194.22 (p) When a timed response is required, the user shall be alerted and given sufficient time to indicate more time is required.</li>
+		</ul>
+	</section>
+	<section class="slide">
+		<h2>Web Content Accessibility Guidelines (WCAG) 2.0</h2>
+		<p>Unhappy with the current state of Section 508, the W3C created a working group <strong>Web Accessibility Initiative</strong> (WAI) to create a new standard called <strong>Web Content Accessiblity Guidelines</strong>, more commonly refered to as <strong>WCAG</strong>.</p>
+		<ul>
+			<li><a href="https://www.w3.org/WAI/WCAG20/glance/" target="_blank">WCAG 2 at a Glance</a></li>
+			<li><a href="https://www.w3.org/WAI/WCAG20/quickref/" target="_blank">A customizable quick reference to Web Content Accessibility Guidelines (WCAG) 2.0 requirements (success criteria) and techniques.</a></li>
+		</ul>
+	</section>
+	<section class="slide">
+		<h2>4 Principles of WCAG</h2>
+		<h3>Perceivable</h3>
+		<ul>
+			<li>Provide text alternatives for non-text content.</li>
+			<li>Provide captions and other alternatives for multimedia.</li>
+			<li>Create content that can be presented in different ways, including by assistive technologies, without losing meaning.</li>
+			<li>Make it easier for users to see and hear content.</li>
+		</ul>
+	</section>
+	<section class="slide">
+		<h2>4 Principles of WCAG</h2>
+		<h3>Operable</h3>
+		<ul>
+			<li>Make all functionality available from a keyboard.</li>
+			<li>Give users enough time to read and use content.</li>
+			<li>Do not use content that causes seizures.</li>
+			<li>Help users navigate and find content.</li>
+		</ul>
+	</section>
+	<section class="slide">
+		<h2>4 Principles of WCAG</h2>
+		<h3>Understandable</h3>
+		<ul>
+			<li>Make text readable and understandable.</li>
+			<li>Make content appear and operate in predictable ways.</li>
+			<li>Help users avoid and correct mistakes.</li>
+		</ul>
+
+		<h3>Robust</h3>
+		<ul>
+			<li>Maximize compatibility with current and future user tools.</li>
+		</ul>
+		
+	</section>
+	<section class="slide">
+		<h2>WCAG 2.0</h2>
+		<p>WCAG has 12 Guidelines with 61 success criteria that can be tested against. WCAG also has 3 levels of compliance:</p>
+		<ul>
+			<li>A (least strict)</li>
+			<li>AA (the level we strive for)</li>
+			<li>AAA (most strict)</li>
+		</ul>
+	</section>
+	<section class="slide">
+		<h2 class="shout shrink">Common A11Y Issues</h2>
+	</section>
+	<section class="slide">
+		<h2>Non-keyboard Accessible Websites</h2>
+		<ul>
+			<li>Can you navigate to all links, buttons and form controls using the tab key?</li>
+			<li>Are there focus states for links, buttons and form controls?</li>
+			<li>Do all JavaScript interactions occur without a mouse?</li>
+			<li>When JavaScript interactions or inpage links are triggered does the focus change too (if needed)?</li>
+		</ul>
+	</section>
+	<section class="slide">
+		<h2>Incorrect Headings</h2>
+		<ul>
+			<li>Only use one H1 per page</li>
+			<li>Never skip levels while decending</li>
+			<li>Never use a heading for how it looks visually</li>
+			<li>Do not style non-heading elements to look like headings</li>
+		</ul>
+		<p class="note"><a href="tests/headings-text-test.html" target="_blank">Examples of headings used correctly and incorrectly</a></p>
+	</section>
+
+	<section class="slide">
+		<h2>Links</h2>
+		<ul>
+			<li>Do not have broken links</li>
+			<li>Links should have a hover and focus state</li>
+			<li>Use good descriptive text on links</li>
+			<li>If you use the title attribute don't duplicate link text</li>
+			<li>Do not use anchor elment for JavaScript actions, use a button</li>
+		</ul>
+		<p class="note"><a href="tests/link-test.html" target="_blank">Examples of links used correctly and incorrectly</a></p>
+	</section>
+	<section class="slide">
+		<h2>Images</h2>
+		<ul>
+			<li>Images should always have the alt attribute, missing alt attributes cause assistive technology to announce the image path</li>
+			<li>Use descriptive text in the alt attribute that describes the purpose of the image</li>
+			<li>Bad alt text = "Person at desk"</li>
+			<li>Good alt text = "Developer coding a presentation about A11Y"</li>
+			<li>If the image is purley decrative use a blank alt attribute</li>
+		</ul>
+	</section>
+	<section class="slide">
+		<h2>Forms</h2>
+		<ul>
+			<li>Ensure forms are logical and easy to use</li>
+			<li>Ensure forms are keyboard accessible</li>
+			<li>Associate form labels with controls</li>
+			<li>Groups of checkboxes and radio buttons should be in fieldsets with legends</li>
+		</ul>
+			<p class="note"><a href="tests/form-test.html" target="_blank">Examples of forms</a></p>
+	</section>
+	<section class="slide">
+		<h2>Text Legibility</h2>
+		<ul>
+			<li>Is there correct color contrast between text and backgrounds</li>
+			<li>If text is over an image can you read it</li>
+		</ul>
+		<p class="note"><a href="tests/legibility-test.html" target="_blank">Examples of color contrast errors</a></p>
+	</section>
+	<section class="slide">
+		<h2 class="shout shrink">How to test A11Y Issues</h2>
+	</section>
+	<section class="slide">
+		<img src="pictures/tota11y.png" alt="Screen Shot of tota11y Tool" class="cover">
+	</section>
+	<section class="slide">
+		<img src="pictures/WAVE.png" alt="Screen Shot of WAVE " class="cover">
+	</section>
+	<section class="slide">
+		<img src="pictures/Tenon.png" alt="Screen Shot of Tenon " class="cover">
+	</section>
+	<section class="slide">
+		<img src="pictures/html_codesniffer.png" alt="Screen Shot of HTML_CodeSniffer" class="cover">
+	</section>
+	<section class="slide">
+		<img src="pictures/NVDA.png" alt="Screen Shot of NVDA Website " class="cover">
+	</section>
+	<section class="slide">
+		<h2>Where to Find the Tools</h2>
+		<ul>
+			<li><a href="http://khan.github.io/tota11y/" target="_blank">Tota11y</a></li>
+			<li><a href="https://wave.webaim.org/toolbar/" target="_blank">WAVE Toolbar</a></li>
+			<li><a href="https://tenon.io/" target="_blank">Tenon</a> - Log In in Last Pass</li>
+			<li><a href="http://squizlabs.github.io/HTML_CodeSniffer/" target="_blank">HTML_CodeSniffer</a></li>
+			<li><a href="https://www.paciellogroup.com/resources/contrastanalyser/" target="_blank">Color Contrast Analyser</a></li>
+			<li><a href="http://www.nvaccess.org/" target="_blank">NVDA Screen Reader</a></li>
+		</ul>
+	</section>
+	<section class="slide">
+		<h2>Sample Pages to Test</h2>
+		<ul>
+			<li><a href="tests/link-test.html" target="_blank">Link Test</a></li>
+			<li><a href="tests/headings-text-test.html" target="_blank">Headings Test</a></li>
+			<li><a href="tests/legibility-test.html" target="_blank">Legibility Test</a></li>
+			<li><a href="tests/form-test.html" target="_blank">Form Test</a></li>
+		</ul>
+	</section>
+	<section class="slide">
+		<h2 class="shout shrink">Questions?</h2>
+	</section>
+	<!--
+		To hide progress bar from entire presentation
+		just remove “progress” element.
+		-->
+	<div class="progress"></div>
+	<script src="shower/shower.min.js"></script>
+	<!-- Copyright © 2015 Yours Truly, Famous Inc. -->
+	<!-- Photos by John Carey, fiftyfootshadows.net -->
+</body>
+</html>

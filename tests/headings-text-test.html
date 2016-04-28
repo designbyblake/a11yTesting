@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Headings and Text Test</title>
+	
+	<link rel="stylesheet" href="example.css">
+</head>
+<body>
+	<div class="body-wrap">
+		<h1>Heading and Text Test</h1>
+		
+		<h2>Headings</h2>
+		<ul>
+			<li>Headings create the document outline</li>
+			<li>Headings levels should not ever be chosen for how they look</li>
+			<li>Headings always go in order when decending. For example, H4 should never follow an H2. H4 comes after H3 or other H4 elements.</li>
+			<li>Only use one H1 per page even though HTML 5 spec says you can use more.</li>
+			<li>Headings should rarely come one after the other with no other content between them</li>
+		</ul>
+
+		<h3>Examples of Proper Heading Order</h3>
+		<ul>
+			<li>H1
+				<ul>
+					<li>H2</li>
+					<li>H2
+						<ul>
+							<li>H3
+								<ul>
+									<li>H4</li>
+									<li>H4</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>H2</li>
+				</ul>
+			</li>
+		</ul>
+
+		<h2>Are Visual Headings Semantic?</h2>
+		<div class="row section">
+			<h2>This is an example of H2 Text</h2>
+			<h3>This is an example of H3 Text</h3>
+			<h4>This is an example of H4 Text</h4>
+			<h5>This is an example of H5 Text</h5>
+			<h6>This is an example of H6 Text</h6>
+		</div>
+
+		<div class="row section">
+			<p class="h2">This is an example of H2 Text</p>
+			<p class="h3">This is an example of H3 Text</p>
+			<p class="h4">This is an example of H4 Text</p>
+			<p class="h5">This is an example of H5 Text</p>
+			<p class="h6">This is an example of H6 Text</p>
+		</div>
+
+		<div class="row section">
+			<h2>Examples of Heading Errors</h2>
+			<h4>This is an example of H4 Text</h4>
+			<h3>This is an example of H3 Text</h3>
+			<h6>This is an example of H6 Text</h6>
+			<h5>This is an example of H5 Text</h5>
+		</div>
+		
+	</div>
+<script src="tota11y.min.js"></script>
+</body>
+
+</html>

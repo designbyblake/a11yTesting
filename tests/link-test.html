@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Link Test</title>
+	
+	<link rel="stylesheet" href="example.css">
+</head>
+<body>
+	<div class="body-wrap">
+		<h1>Link Examples</h1>
+
+		<h2>Default Links</h2>
+		<p>These links have no styling at all. They should be blue if not visited and purple for visited. They have no hover state and use the browser default focus state</p>
+		<ul>
+			<li><a href="http://www.lmo.com">LMO</a></li>
+			<li><a href="http://www.yahoo.com">Yahoo!</a></li>
+			<li><a href="http://www.google.com">Google</a></li>
+			<li><a href="http://www.woot.com">Woot</a></li>
+			<li><a href="http://www.amazon.com">Amazon</a></li>
+		</ul>
+
+		<h2>Hover Links, default focus removed</h2>
+		<p>These links use the default styling but do have a hover state. The default focus state is removed.</p>
+		<ul class="link2">
+			<li><a href="http://www.lmo.com">LMO</a></li>
+			<li><a href="http://www.yahoo.com">Yahoo!</a></li>
+			<li><a href="http://www.google.com">Google</a></li>
+			<li><a href="http://www.woot.com">Woot</a></li>
+			<li><a href="http://www.amazon.com">Amazon</a></li>
+		</ul>
+
+		<h2>Hover &amp; Focus Links, default focus removed</h2>
+		<p>These links have styles added to them. There is a hover and focus state, they are the same.</p>
+		<ul class="link3">
+			<li><a href="http://www.lmo.com">LMO</a></li>
+			<li><a href="http://www.yahoo.com">Yahoo!</a></li>
+			<li><a href="http://www.google.com">Google</a></li>
+			<li><a href="http://www.woot.com">Woot</a></li>
+			<li><a href="http://www.amazon.com">Amazon</a></li>
+		</ul>
+
+
+		<h2>Good and bad text examples</h2>
+		<p>Links should have descriptive text and avoid repetition of the same text over and over again. Phrases to avoid are click here, here, more, read more, learn more, etc.</p>
+		<ul class="link3">
+			<li>Learn more about LMO Advertising<a href="http://www.lmo.com">Click here</a></li>
+			<li><a href="http://www.lmo.com">Learn More about LMO Advertising</a></li>
+			<li><a href="http://www.lmo.com">Learn More<span class="access"> about LMO Advertising</span></a></li>
+		</ul>
+
+		<h2>Title Attribute</h2>
+		<p>It is best practice to not put relevant information only in a title attribute. Some assitive technologies will read titles some do not. Avoid repetion in the title attribute and link text as both may be read.</p>
+		<ul class="link3">
+			<li><a href="http://www.lmo.com" title="Learn more about LMO Advertising">Learn more about LMO Advertising</a></li>
+			<li><a href="http://www.lmo.com" title="Visit us for all your marketing needs">Learn more about LMO Advertising</a></li>
+			
+		</ul>
+	</div>
+<script src="tota11y.min.js"></script>
+</body>
+
+</html>
